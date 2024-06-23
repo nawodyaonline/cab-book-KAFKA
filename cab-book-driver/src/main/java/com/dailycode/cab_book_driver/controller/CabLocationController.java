@@ -24,7 +24,11 @@ public class CabLocationController {
     @PutMapping
     public ResponseEntity updateLocation(){
 
-
+        int range = 100;
+        while(range > 0){
+            System.out.println(Math.random() + "," + Math.random());
+            range--;
+        }
 
         return new ResponseEntity(Map.of("message", "Location updated!"), HttpStatus.OK);
     }
